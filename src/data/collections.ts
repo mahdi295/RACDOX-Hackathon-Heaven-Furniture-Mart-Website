@@ -1,0 +1,313 @@
+export type CollectionSlug = "living" | "bedroom" | "dining" | "office" | "custom";
+
+export type Collection = {
+  slug: CollectionSlug;
+  name: string;
+  items: string;
+  blurb: string;
+  cover: string;
+  coverAlt: string;
+  gallery: { file: string; alt: string }[];
+};
+
+export const collections: Collection[] = [
+  {
+    slug: "living",
+    name: "Living Room Collection",
+    items: "Sofas · Coffee Tables · TV Units · Consoles",
+    blurb:
+      "Gold-gilt classic sofa sets, embroidered upholstery and quiet modern seating — built for rooms that host.",
+    cover: "living-01-classic-gold-sofa-set.webp",
+    coverAlt: "Ornate gold-carved three-piece sofa set with cream upholstery in the showroom",
+    gallery: [
+      {
+        file: "living-01-classic-gold-sofa-set.webp",
+        alt: "Ornate gold-carved three-piece sofa set with cream upholstery",
+      },
+      {
+        file: "living-02-embroidery-sofa-set.webp",
+        alt: "Gold-gilt loveseat in grey velvet with floral embroidery",
+      },
+      {
+        file: "living-03-blue-embroidery-sofa.webp",
+        alt: "Gold-gilt sofa and chair in royal blue floral brocade",
+      },
+      { file: "living-04-gold-navy-sofa.webp", alt: "Gold-framed sofa set with navy upholstery" },
+      {
+        file: "living-05-beige-tufted-sofa.webp",
+        alt: "Beige tufted sofa with carved wooden detailing",
+      },
+      {
+        file: "living-06-grey-embroidered-sofa.webp",
+        alt: "Grey embroidered sofa set with gilded frame",
+      },
+      {
+        file: "living-07-modern-teal-sofa.webp",
+        alt: "Modern teal upholstered sofa with wood base",
+      },
+      {
+        file: "living-09-premium-living-set.webp",
+        alt: "Premium living room set styled in a room",
+      },
+      {
+        file: "living-10-vintage-coffee-table.webp",
+        alt: "Vintage-style carved wooden coffee table",
+      },
+      {
+        file: "living-10-navy-tufted-carved-sofa.webp",
+        alt: "Navy blue tufted sofa set with gold-carved wood frame",
+      },
+      {
+        file: "living-11-olive-chaise-lounge.webp",
+        alt: "Olive velvet chaise lounge chair with carved wooden base",
+      },
+      {
+        file: "living-12-grey-floral-tufted-sofa.webp",
+        alt: "Grey floral tufted sofa with silver-carved wood trim",
+      },
+      {
+        file: "living-13-teal-modern-styled-set.webp",
+        alt: "Teal modern sofa set styled in a contemporary living room",
+      },
+    ],
+  },
+  {
+    slug: "bedroom",
+    name: "Bedroom Collection",
+    items: "Beds · Wardrobes · Dressing Tables · Bedside Tables",
+    blurb:
+      "From deeply carved mahogany frames to emerald velvet minimalism — beds finished to be lived with for decades.",
+    cover: "bedroom-02-emerald-modern-bed.webp",
+    coverAlt: "Emerald velvet modern bed with wood and brass detailing",
+    gallery: [
+      {
+        file: "bedroom-01-luxury-carved-bed.webp",
+        alt: "Dark mahogany and gold carved bed frame with teal velvet headboard",
+      },
+      {
+        file: "bedroom-02-emerald-modern-bed.webp",
+        alt: "Emerald velvet modern bed with wood and brass detailing",
+      },
+      {
+        file: "bedroom-03-carved-blue-bed.webp",
+        alt: "Carved bed frame with blue velvet headboard",
+      },
+      { file: "bedroom-04-emerald-gold-bed.webp", alt: "Emerald and gold upholstered bed" },
+      {
+        file: "bedroom-05-white-modern-bedroom.webp",
+        alt: "White modern bedroom set with soft lighting",
+      },
+      {
+        file: "bedroom-06-teal-tufted-headboard.webp",
+        alt: "Teal tufted headboard bed with gold-carved wood frame",
+      },
+      {
+        file: "bedroom-07-carved-wood-blue-linen.webp",
+        alt: "Dark carved wood bed frame styled with blue linens",
+      },
+      {
+        file: "bedroom-08-oval-tufted-headboard-detail.webp",
+        alt: "Close-up of an oval tufted cream headboard",
+      },
+    ],
+  },
+  {
+    slug: "dining",
+    name: "Dining Collection",
+    items: "Dining Tables · Dining Chairs · Cabinets",
+    blurb:
+      "Carved hardwood, marble tops and champagne-gilt finishes — dining sets sized to your room, not a catalogue.",
+    cover: "dining-01-luxury-dining-set.webp",
+    coverAlt: "Carved luxury dining set in a styled showroom interior",
+    gallery: [
+      {
+        file: "dining-01-luxury-dining-set.webp",
+        alt: "Carved luxury dining set in a styled showroom interior",
+      },
+      {
+        file: "dining-02-luxury-dining-table.webp",
+        alt: "Champagne-gilt dining set beneath a chandelier",
+      },
+      {
+        file: "dining-03-customized-marble-table.webp",
+        alt: "Customized dining table with marble top",
+      },
+      {
+        file: "dining-04-cream-gold-dining.webp",
+        alt: "Cream and gold dining set with upholstered chairs",
+      },
+      { file: "dining-06-carved-wood-dining.webp", alt: "Carved wooden dining table and chairs" },
+      {
+        file: "dining-07-navy-velvet-marble-set.webp",
+        alt: "Navy velvet upholstered chairs around a marble-top dining table",
+      },
+      {
+        file: "dining-08-champagne-styled-set.webp",
+        alt: "Champagne-finish dining set styled with a floral centerpiece",
+      },
+      {
+        file: "dining-09-carved-wood-glass-top.webp",
+        alt: "Carved wood dining set with a glass table top",
+      },
+    ],
+  },
+  {
+    slug: "office",
+    name: "Office & Study",
+    items: "Executive Tables · Bookshelves · Workstations",
+    blurb:
+      "Director desks, conference tables and workstations delivered as complete, coordinated corporate interiors.",
+    cover: "office-01-director-desk-CLEAN.webp",
+    coverAlt: "Executive director desk in a finished corporate office",
+    gallery: [
+      {
+        file: "office-01-director-desk-CLEAN.webp",
+        alt: "Executive director desk in a finished office",
+      },
+      {
+        file: "office-02-conference-room-CLEAN.webp",
+        alt: "Conference room with a long meeting table",
+      },
+      { file: "office-05-workspace.webp", alt: "Office lounge table and workspace seating" },
+      {
+        file: "office-06-executive-desk-city-view.webp",
+        alt: "Executive desk in a finished office with a city view",
+      },
+      {
+        file: "office-07-modern-led-workstation.webp",
+        alt: "Modern desk workstation with integrated LED lighting",
+      },
+    ],
+  },
+  {
+    slug: "custom",
+    name: "Custom & Space-Saving Furniture",
+    items: "Modular Storage · Wall Units · Custom Designs",
+    blurb:
+      "Showcase cabinets, shoe storage and wall units engineered to the exact centimetre of the space you have.",
+    cover: "custom-01-luxury-showcase-cabinet.webp",
+    coverAlt: "Cream and gold glass display showcase cabinet",
+    gallery: [
+      {
+        file: "custom-01-luxury-showcase-cabinet.webp",
+        alt: "Cream and gold glass display cabinet",
+      },
+      {
+        file: "custom-02-modern-black-gold-cabinet.webp",
+        alt: "Modern matte black and brass shoe cabinet",
+      },
+      { file: "custom-03-shoe-cabinet-sideboard.webp", alt: "Shoe cabinet and sideboard unit" },
+      { file: "custom-04-gold-showcase.webp", alt: "Gold-framed glass showcase unit" },
+      {
+        file: "custom-05-collection-board.webp",
+        alt: "Collection board of custom storage designs",
+      },
+      {
+        file: "custom-06-gold-ornate-wardrobe.webp",
+        alt: "Gold-carved ornate two-door wardrobe with mirror",
+      },
+      {
+        file: "custom-07-mahogany-brass-inlay-wardrobe.webp",
+        alt: "Mahogany three-door wardrobe with brass inlay detailing",
+      },
+      {
+        file: "custom-08-white-lattice-showcase.webp",
+        alt: "White showcase cabinet with a carved lattice-pattern door",
+      },
+      {
+        file: "custom-09-grand-glass-showcase.webp",
+        alt: "Large four-door wood and glass display showcase",
+      },
+    ],
+  },
+];
+
+export const bespokeProcess = [
+  { no: "01", title: "Meet", body: "New client meeting, brief understanding." },
+  { no: "02", title: "Research", body: "Brainstorming and preparation." },
+  { no: "03", title: "Design", body: "Refine the concept around your space." },
+  { no: "04", title: "Craft", body: "Skilled in-house craftsmanship, premium materials." },
+  { no: "05", title: "Deliver", body: "Delivery, setup and installation." },
+];
+
+export const milestones = [
+  { year: "2020", text: "Founded by Abul Kalam Bhuiyan" },
+  { year: "2021", text: "Registered and opened the Agrabad Showroom" },
+  { year: "2024 & 2025", text: "Participated in the International Furniture Fair, Chattogram" },
+  { year: "2025", text: "Became a member of the Chamber of Commerce" },
+  { year: "2026", text: "Received the BFIOA recognition nationwide" },
+];
+
+export const testimonial = {
+  quote:
+    "I used to always run into a problem — the table was never comfortable, or the setup never quite fit. After a lot of searching, I finally got a custom desktop table made from Heaven Furniture Mart. Honestly, sitting at my desk now, the whole setup feels premium and productive. The finishing, build quality, and detailing are outstanding. If you want good-quality custom furniture, I'd definitely recommend them.",
+  author: "Rakibur Rahaman",
+  note: "Verified customer review, translated from Bengali",
+};
+
+export const caseStudy = {
+  client: "FYTOBYTE LTD",
+  title: "A completed corporate project for FYTOBYTE Ltd.",
+  body: "Director office, podcast room, reception and workstation area — furnished end to end as a single coordinated interior.",
+  images: [
+    {
+      file: "fytobyte-00-overview.webp",
+      alt: "Overview of the completed FYTOBYTE Ltd office interior",
+    },
+    { file: "fytobyte-01-director-office.webp", alt: "Director office furnished for FYTOBYTE Ltd" },
+    { file: "fytobyte-03-reception.webp", alt: "Reception area furnished for FYTOBYTE Ltd" },
+    { file: "fytobyte-04-workstation.webp", alt: "Workstation area furnished for FYTOBYTE Ltd" },
+  ],
+};
+
+export const socialGrid = [
+  { file: "living-08-cozy-sectional-post.webp", alt: "Cozy sectional sofa social post" },
+  { file: "living-11-cozy-chair-post.webp", alt: "Cozy accent chair social post" },
+  { file: "dining-05-luxury-dining-post.webp", alt: "Luxury dining set social post" },
+  { file: "office-03-workspace-with-text-overlay.webp", alt: "Workspace furniture social post" },
+  { file: "office-04-chair-with-text-overlay.webp", alt: "Office chair social post" },
+  { file: "custom-05-collection-board.webp", alt: "Custom furniture collection board" },
+];
+
+export const eventPhotos = [
+  {
+    file: "event-chattogram-furniture-fair-2024-01.webp",
+    alt: "Managing Director speaking at a furniture trade fair",
+    caption: "Managing Director at the trade fair, Chattogram",
+  },
+  {
+    file: "team-group-photo-exhibition-booth.webp",
+    alt: "Heaven Furniture Mart team at the exhibition booth",
+    caption: "Heaven Furniture Mart team at the exhibition booth",
+  },
+  {
+    file: "event-chattogram-furniture-fair-2024-04.webp",
+    alt: "Heaven Furniture Mart booth at the 14th Chattogram Furniture Fair 2024",
+    caption: "Award-winning display, 14th Chattogram Furniture Fair",
+  },
+  {
+    file: "event-chattogram-furniture-fair-2024-02.webp",
+    alt: "Visitors at the Heaven Furniture Mart fair booth",
+    caption: "14th Chattogram Furniture Fair, 2024",
+  },
+  {
+    file: "event-award-recognition-ceremony.webp",
+    alt: "Award and recognition ceremony",
+    caption: "Award and recognition ceremony",
+  },
+  {
+    file: "event-iiuc-cse-fest-sponsor-01.webp",
+    alt: "Heaven Furniture Mart sponsoring IIUC CSE Fest",
+    caption: "Sponsor, IIUC CSE Fest",
+  },
+  {
+    file: "event-iiuc-cse-fest-sponsor-02.webp",
+    alt: "Heaven Furniture Mart booth and sponsorship display at IIUC CSE Fest",
+    caption: "Sponsor, IIUC CSE Fest",
+  },
+  {
+    file: "event-iiuc-cse-fest-sponsor-03.webp",
+    alt: "IIUC CSE Fest sponsorship ceremony",
+    caption: "Sponsor, IIUC CSE Fest",
+  },
+];

@@ -1,0 +1,22 @@
+{
+  "compatibility_date": "2025-01-01",
+  "main": "index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "..\\public"
+  },
+  "name": "heaven-furniture-mart",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "no_bundle": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.mjs",
+        "**/*.js"
+      ]
+    }
+  ]
+}
