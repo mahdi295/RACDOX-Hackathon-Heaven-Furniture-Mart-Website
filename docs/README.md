@@ -1,38 +1,42 @@
-# Heaven Furniture Mart — Website
+# Documentation Overview
 
-Bespoke luxury furniture site for Heaven Furniture Mart (Agrabad, Chattogram). Built with TanStack Start (React 19 + SSR), Tailwind CSS v4, shadcn/ui, embla-carousel, framer-motion.
+This folder contains the documentation for the Heaven Furniture Mart website project. The project is a premium, bespoke furniture brand website for a showroom in Agrabad, Chattogram, designed to communicate craftsmanship, premium materials, and a personal consultation-led buying experience.
 
-## Stack
-- **Framework:** TanStack Start + TanStack Router (file-based routes in `src/routes/`)
-- **Styling:** Tailwind CSS v4 (`src/styles.css`, brand tokens under `@theme`)
-- **UI kit:** shadcn/ui components in `src/components/ui/` (generated, edit sparingly)
-- **Motion:** framer-motion (`Reveal.tsx`, `Hero.tsx` crossfade carousel)
-- **Carousel:** embla-carousel-react via shadcn `Carousel` (Hero dots, Gallery swipe)
-- **Deploy target:** Cloudflare Workers (nitro `cloudflare-module` preset, see `vite.config.ts`)
+## Documentation set
+- `README.md` — root project overview and quick-start guide
+- `DEPLOYMENT.md` — hosting, Cloudflare setup, and deployment troubleshooting
+- `CONTENT_GUIDE.md` — how to update copy across the site without changing layouts
+- `ASSET_GUIDE.md` — asset sourcing, naming, and quality notes
+- `TESTING.md` — QA checklist, checks, and quality gate guidance
+- `CONTENT_REVIEW.md` — editorial review and business validation notes
+- `PLAN_DEVIATIONS.md` — framework and implementation decisions versus the original plan
+- `HANDOVER.md` — stakeholder-ready summary of what was built and what remains
 
-## Run locally
-```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build to .output/
-npm run lint      # eslint + prettier
-```
+## Project context
+The website is built to support a local premium furniture business with:
+- a luxury visual identity
+- category-based collections for living, bedroom, dining, office, and custom solutions
+- direct WhatsApp and phone inquiry flow
+- branded showroom location and contact details
+- a polished, conversion-focused presentation for modern customers
 
-## Project structure
-```
-src/
-  routes/            # one file per page (index, about, bespoke, collections, showroom, contact)
-  components/
-    layout/           # Navbar, Footer, SiteLayout, PageHero
-    sections/         # Hero, Collections, Gallery, WhyHeaven, Process, Voices, etc.
-    ui/               # shadcn primitives
-  data/               # company.ts (contact/copy), collections.ts (products, gallery, events)
-  assets/images/      # real photo files (see ASSET_GUIDE.md)
-  lib/assets.ts       # img("filename.jpg") -> resolved build URL
-```
+## Key business facts reflected in the site
+- Business: Heaven Furniture Mart
+- Founder: Abul Kalam Bhuiyan
+- Location: Agrabad Access Road, Chattogram
+- Contact: +880 1960-481983
+- Email: heavenfurnituremart@gmail.com
+- Working model: showroom-first, bespoke-furniture oriented, consultation-led sales
 
-## Editing content
-Almost all copy lives in `src/data/company.ts` and `src/data/collections.ts` — see `CONTENT_GUIDE.md`.
+## Where content lives
+The majority of copy and business data live in:
+- `src/data/company.ts`
+- `src/data/collections.ts`
 
-## Known non-blocking items
-See `CONTENT_REVIEW.md` for what was carried over from the original build plan without independent verification (mainly the exact 5-step bespoke process wording), and for the log of bugs found/fixed in each review pass.
+Use `CONTENT_GUIDE.md` for practical editing instructions without touching the React code structure.
+
+## Where to start
+1. Read the root `README.md` for the overview.
+2. Review `CONTENT_GUIDE.md` before changing copy.
+3. Check `DEPLOYMENT.md` before live publishing.
+4. Use `TESTING.md` before presenting or launching the site.

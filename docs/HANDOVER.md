@@ -1,36 +1,55 @@
-# Final Handover Report
+# Project Handover
 
-## A. What was built
-Homepage (`/`) with Hero (3-slide crossfade carousel), Brand Intro, 5-category Collections grid, Why Heaven / services, Bespoke Process (5 steps), Gallery (swipeable carousel), Voices (MD quote + customer testimonial), Showroom strip, Milestones, FAQ, Closing CTA. Supporting routes: `/collections` (all 5 categories, deep-linkable), `/bespoke` (process + FYTOBYTE case study), `/about` (story + milestones + fair/award grid), `/showroom` (visit info), `/contact` (consultation form + direct contact). `/journal` intentionally not built — see `CONTENT_REVIEW.md`.
+## What this website is
+This project is a premium local-business website for Heaven Furniture Mart, positioned as a luxury bespoke furniture brand in Chattogram. It is designed to showcase workmanship, bespoke design capability, and a direct path to inquiry through WhatsApp and phone contact.
 
-## B. Business content used, and source
-All Part 4 copy (tagline, MD quote, services, FAQ, milestones, testimonial, address) reproduced verbatim from the Master Build Plan / Facebook page export — see `CONTENT_REVIEW.md` for the line-by-line verification.
+## Pages included
+- Homepage
+- About
+- Bespoke furniture process
+- Collections
+- Showroom
+- Contact
 
-## C. Real assets used, and placement
-52 real photos, all traceable to `Heaven-Assets-Organized` folders — full mapping in `ASSET_GUIDE.md`.
+## Business content represented
+The site reflects the real business positioning and contact details used by the brand, including:
+- Heaven Furniture Mart
+- Agrabad showroom presence
+- managing director profile and leadership story
+- custom furniture categories and product storytelling
+- local showroom visit information
+- direct consultation/contact experience
 
-## D. Missing info needing manual verification
-See `CONTENT_REVIEW.md` — bespoke process steps 03–05, milestones freshness, FYTOBYTE feature-prominently approval, phone/email still active.
+## Brand positioning
+The website aims to communicate:
+- premium design and craftsmanship
+- made-to-measure furniture for homes and offices
+- strong local trust and showroom presence
+- custom interior and fit-out thinking
+- a clear, frictionless sales path via WhatsApp inquiry
 
-## E. Run locally
-```bash
-npm install && npm run dev
-```
+## Documentation package
+- `README.md` — project overview and setup
+- `docs/DEPLOYMENT.md` — production deployment guidance
+- `docs/CONTENT_GUIDE.md` — content editing without code changes
+- `docs/ASSET_GUIDE.md` — image management and asset sourcing
+- `docs/TESTING.md` — QA checklist
+- `docs/CONTENT_REVIEW.md` — editorial and business review notes
+- `docs/PLAN_DEVIATIONS.md` — framework and decision rationale
+- `REBUILD_CHANGELOG.md` — repair and iteration log
 
-## F. Deploy / live URL
-See `DEPLOYMENT.md`. **Live URL: not yet deployed — deploy before recording/submitting** (`npm run build && npx wrangler deploy`, or your preferred host).
+## Deployment status
+The project is ready for build and deployment according to the current Cloudflare-ready setup. Final public URL and domain binding should be handled once the live domain is confirmed.
 
-## G. Manual testing
-See `TESTING.md`. Latest bugfix pass (lightbox, Cloudflare deploy fix): `REBUILD_CHANGELOG.md` #9–14.
+## Operational notes
+- The consultation form follows a direct WhatsApp lead flow.
+- There is no current server-side lead capture system.
+- The project is content-focused and editorially aligned with the furniture business.
+- The documentation is intentionally structured to support a clean handoff without requiring code changes.
 
-## H. Known limitations
-- Consultation form has no server-side capture — a lead is only guaranteed if the visitor clicks through to WhatsApp after submitting (by design, per plan Part 5 — "no confirmed backend exists"). Fine for the hackathon; worth a real backend if this becomes the live business site.
-- No `/journal` route (deliberate cut, per plan's own priority order).
-- No sitemap.xml / canonical URLs yet — needs the real deployed domain first (see `DEPLOYMENT.md`).
-- Built on TanStack Start, not Next.js as the plan specified — see `PLAN_DEVIATIONS.md` for why, and how to change it if required.
-
-## I. Suggested 60–90 second recording sequence
-Matches plan Part 15 exactly: Hero (let one slide transition play) → Collections (scroll all 5 cards) → Bespoke section/process → Gallery (swipe the carousel) → Showroom → Milestones/MD quote → Closing CTA → fill the consultation form → show WhatsApp deep link firing with prefilled message → quick resize/mobile-view glimpse. No voice or face required.
-
-## J. Suggested Facebook submission caption
-> Heaven Furniture Mart's Facebook page, reimagined as a full bespoke-furniture brand website — built for #racdox_hackathon 2026. Real showroom photography, a working consultation-to-WhatsApp flow, and a five-category collection browser, all built around Heaven's own real brand assets and copy. 🛋️🪵 #racdox_hackathon
+## Recommended next steps
+1. Confirm the live business contact details remain current.
+2. Review the final copy against the owner’s preferred wording.
+3. Deploy to the production host.
+4. Test the live contact, WhatsApp, and map links before public announcement.
+5. Prepare final social sharing and SEO metadata once the public domain is fixed.
