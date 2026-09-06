@@ -4,7 +4,6 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { img } from "@/lib/assets";
 import { company } from "@/data/company";
-import { MagneticLink } from "@/components/MagneticLink";
 
 const slides = [
   {
@@ -87,7 +86,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mt-10 flex flex-wrap gap-4"
         >
-          <MagneticLink
+          <Link
             to="/contact"
             className="bg-gold text-accent-foreground group inline-flex items-center gap-2 rounded-sm px-7 py-4 text-sm font-semibold tracking-wide transition-opacity hover:opacity-90"
           >
@@ -96,7 +95,7 @@ export function Hero() {
               className="size-4 transition-transform group-hover:translate-x-1"
               aria-hidden
             />
-          </MagneticLink>
+          </Link>
           <Link
             to="/collections"
             className="border-ivory/40 text-ivory hover:border-gold hover:text-gold inline-flex items-center rounded-sm border px-7 py-4 text-sm font-semibold tracking-wide transition-colors"

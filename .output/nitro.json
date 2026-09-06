@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-06T15:58:40.399Z",
+  "date": "2026-09-06T17:03:16.476Z",
   "preset": "cloudflare-module",
   "framework": {
     "name": "nitro",
@@ -16,6 +16,9 @@
   },
   "config": {
     "cloudflare": {
+      "wrangler": {
+        "name": "heaven-furniture-mart"
+      },
       "deployConfig": true,
       "nodeCompat": true
     }

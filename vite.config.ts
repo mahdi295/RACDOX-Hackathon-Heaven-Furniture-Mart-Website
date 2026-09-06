@@ -48,7 +48,13 @@ export default defineConfig({
     // Cloudflare rejects the deploy with "Can't set compatibility date in the
     // future" (error 10021). A fixed, known-good past date avoids that entirely.
     // Safe to bump forward periodically (see docs/DEPLOYMENT.md).
-    nitro({ preset: "cloudflare-module", compatibilityDate: "2025-01-01" }),
+    nitro({
+      preset: "cloudflare-module",
+      compatibilityDate: "2025-01-01",
+      cloudflare: {
+        wrangler: { name: "heaven-furniture-mart" },
+      },
+    }),
     viteReact(),
   ],
 });

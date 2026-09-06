@@ -8,7 +8,7 @@ import { c as cn, d as img, g as services, i as SiteLayout, l as company, m as o
 import { t as Reveal } from "./Reveal-Bjnxl8w6.mjs";
 import { r as collections, t as bespokeProcess } from "./collections-N2yjn05X.mjs";
 import { t as description } from "./routes-CwhIexcn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CULIvyM6.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DWoCre1I.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var slides = [
@@ -128,7 +128,7 @@ function Hero() {
 							delay: .3
 						},
 						className: "mt-10 flex flex-wrap gap-4",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticLink, {
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
 							to: "/contact",
 							className: "bg-gold text-accent-foreground group inline-flex items-center gap-2 rounded-sm px-7 py-4 text-sm font-semibold tracking-wide transition-opacity hover:opacity-90",
 							children: ["Request a Consultation", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {

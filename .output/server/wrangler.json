@@ -1,11 +1,11 @@
 {
   "compatibility_date": "2025-01-01",
+  "name": "heaven-furniture-mart",
   "main": "index.mjs",
   "assets": {
     "binding": "ASSETS",
     "directory": "..\\public"
   },
-  "name": "mahdi295-racdox-hackathon-heaven-furniture-mart-website",
   "compatibility_flags": [
     "nodejs_compat"
   ],

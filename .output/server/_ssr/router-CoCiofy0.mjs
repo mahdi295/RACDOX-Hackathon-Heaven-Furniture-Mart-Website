@@ -5,7 +5,7 @@ import { s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[..
 import { t as description$5 } from "./routes-CwhIexcn.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CDRd9QAB.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CoCiofy0.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-J0vF7fyu.css";
@@ -168,7 +168,7 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter$5 = () => import("./routes-CULIvyM6.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-DWoCre1I.mjs");
 var title$5 = "Heaven Furniture Mart | Bespoke Luxury Furniture in Chattogram";
 var Route$5 = createFileRoute("/")({
 	head: () => ({ meta: [
