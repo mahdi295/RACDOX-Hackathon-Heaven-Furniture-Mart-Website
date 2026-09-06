@@ -93,7 +93,7 @@ function ContactPage() {
                 </ul>
               </div>
 
-              <div className="mt-8 flex gap-3">
+              <Reveal delay={200} className="mt-8 flex gap-3">
                 <a
                   href={company.social.facebook}
                   target="_blank"
@@ -121,7 +121,7 @@ function ContactPage() {
                 >
                   <Youtube className="size-4" aria-hidden />
                 </a>
-              </div>
+              </Reveal>
             </div>
           </Reveal>
         </div>

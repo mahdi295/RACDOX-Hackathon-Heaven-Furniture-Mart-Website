@@ -1,6 +1,7 @@
-import { type ComponentProps, useRef } from "react";
+import { type ComponentProps } from "react";
 import { Link } from "@tanstack/react-router";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
+import { useMagnetic } from "@/lib/use-magnetic";
 
 type LinkProps = ComponentProps<typeof Link>;
 
@@ -11,32 +12,13 @@ type LinkProps = ComponentProps<typeof Link>;
  * link for touch/reduced-motion, since the effect only makes sense with a mouse.
  */
 export function MagneticLink({ children, className, ...props }: LinkProps) {
-  const ref = useRef<HTMLAnchorElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const springX = useSpring(x, { stiffness: 200, damping: 18, mass: 0.4 });
-  const springY = useSpring(y, { stiffness: 200, damping: 18, mass: 0.4 });
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    const el = ref.current;
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const relX = e.clientX - rect.left - rect.width / 2;
-    const relY = e.clientY - rect.top - rect.height / 2;
-    x.set(relX * 0.28);
-    y.set(relY * 0.35);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
+  const { ref, springX, springY, onMouseMove, onMouseLeave } = useMagnetic<HTMLAnchorElement>();
 
   return (
     <motion.span
       style={{ x: springX, y: springY, display: "inline-block" }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
     >
       <Link ref={ref} className={className} {...props}>
         {children}

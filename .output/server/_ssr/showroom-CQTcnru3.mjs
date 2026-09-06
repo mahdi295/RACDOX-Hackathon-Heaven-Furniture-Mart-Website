@@ -1,10 +1,10 @@
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { h as Mail, l as Phone, m as MapPin } from "../_libs/lucide-react.mjs";
-import { c as company, r as SiteLayout, t as PageHero, u as img } from "./SiteLayout-91KFfyvO.mjs";
-import { t as Reveal } from "./Reveal-CkjjARpL.mjs";
+import { d as img, i as SiteLayout, l as company, n as PageHero, r as Parallax } from "./SiteLayout-M5p3PCDm.mjs";
+import { t as Reveal } from "./Reveal-Bjnxl8w6.mjs";
 import { r as collections } from "./collections-N2yjn05X.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/showroom-C5KAA7ZD.js
+//#region node_modules/.nitro/vite/services/ssr/assets/showroom-CQTcnru3.js
 var import_jsx_runtime = require_jsx_runtime();
 var interiorShots = [
 	collections[2].gallery[0],
@@ -25,11 +25,15 @@ function ShowroomPage() {
 			className: "section-y bg-background",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "container-hfm grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					src: img("showroom-exterior-storefront-current.webp"),
-					alt: "Heaven Furniture Mart's current Agrabad showroom storefront",
-					className: "aspect-16/10 w-full rounded-sm object-cover",
-					loading: "lazy"
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Parallax, {
+					strength: 24,
+					className: "aspect-16/10 rounded-sm",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: img("showroom-exterior-storefront-current.webp"),
+						alt: "Heaven Furniture Mart's current Agrabad showroom storefront",
+						className: "size-full scale-110 object-cover",
+						loading: "lazy"
+					})
 				}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, {
 					delay: 100,
 					children: [

@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { img } from "@/lib/assets";
 import { Reveal } from "@/components/Reveal";
+import { MagneticLink } from "@/components/MagneticLink";
 import { collections } from "@/data/collections";
 
 export function Collections() {
@@ -106,12 +107,12 @@ export function Collections() {
                 then we design around them.
               </p>
             </div>
-            <Link
+            <MagneticLink
               to="/bespoke"
               className="bg-gold text-accent-foreground inline-flex w-fit shrink-0 rounded-sm px-6 py-3 text-sm font-semibold"
             >
               See the process
-            </Link>
+            </MagneticLink>
           </div>
         </Reveal>
       </div>

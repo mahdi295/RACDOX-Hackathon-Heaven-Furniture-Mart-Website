@@ -1,1 +1,0 @@
-import{r as e}from"./index-DJpEwfXT.js";import{k as t,o as n}from"./SiteLayout-BOYeJNN3.js";var r=e();function i({children:e,className:i,delay:a=0,as:o=`div`}){let s=t[o];return(0,r.jsx)(s,{className:n(i),initial:{opacity:0,y:28},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:`-80px`},transition:{duration:.6,delay:a/1e3,ease:[.21,.47,.32,.98]},children:e})}export{i as t};

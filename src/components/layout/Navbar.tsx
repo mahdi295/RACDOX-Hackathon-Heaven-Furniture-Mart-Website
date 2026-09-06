@@ -6,6 +6,7 @@ import { img } from "@/lib/assets";
 import { company } from "@/data/company";
 import { cn } from "@/lib/utils";
 import { lockBodyScroll, unlockBodyScroll } from "@/lib/scroll-lock";
+import { MagneticLink } from "@/components/MagneticLink";
 
 const nav = [
   { to: "/collections", label: "Collections" },
@@ -112,12 +113,12 @@ export function Navbar() {
             <Phone className="size-4" aria-hidden />
             {company.phone}
           </a>
-          <Link
+          <MagneticLink
             to="/contact"
             className="bg-gold text-accent-foreground rounded-sm px-5 py-2.5 text-sm font-semibold tracking-wide transition-opacity hover:opacity-90"
           >
             Request a Consultation
-          </Link>
+          </MagneticLink>
         </div>
 
         <button

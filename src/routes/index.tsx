@@ -73,9 +73,9 @@ function Index() {
       <Hero />
 
       {/* Ticker strip */}
-      <div className="bg-gold overflow-hidden py-3 select-none" aria-hidden="true">
+      <div className="bg-gold group overflow-hidden py-3 select-none" aria-hidden="true">
         <div
-          className="flex w-max gap-0"
+          className="flex w-max gap-0 group-hover:[animation-play-state:paused]"
           style={{
             animation: "hfm-ticker 28s linear infinite",
           }}

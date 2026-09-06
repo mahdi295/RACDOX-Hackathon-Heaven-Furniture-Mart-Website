@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { PageHero, SiteLayout } from "@/components/layout/SiteLayout";
 import { Reveal } from "@/components/Reveal";
+import { Parallax } from "@/components/Parallax";
 import { company } from "@/data/company";
 import { collections } from "@/data/collections";
 import { img } from "@/lib/assets";
@@ -45,12 +46,14 @@ function ShowroomPage() {
       <section className="section-y bg-background">
         <div className="container-hfm grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <Reveal>
-            <img
-              src={img("showroom-exterior-storefront-current.webp")}
-              alt="Heaven Furniture Mart's current Agrabad showroom storefront"
-              className="aspect-16/10 w-full rounded-sm object-cover"
-              loading="lazy"
-            />
+            <Parallax strength={24} className="aspect-16/10 rounded-sm">
+              <img
+                src={img("showroom-exterior-storefront-current.webp")}
+                alt="Heaven Furniture Mart's current Agrabad showroom storefront"
+                className="size-full scale-110 object-cover"
+                loading="lazy"
+              />
+            </Parallax>
           </Reveal>
           <Reveal delay={100}>
             <p className="eyebrow">Plan your visit</p>

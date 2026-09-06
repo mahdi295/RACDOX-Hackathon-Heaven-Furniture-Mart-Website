@@ -5,6 +5,7 @@ import { z } from "zod";
 import { MessageCircle, CheckCircle2 } from "lucide-react";
 import { company } from "@/data/company";
 import { whatsappLink } from "@/lib/whatsapp";
+import { MagneticButton } from "@/components/MagneticButton";
 
 const projectTypes = ["New", "Custom", "Home Interior", "Office", "Consultation", "Other"] as const;
 const categories = [
@@ -212,13 +213,13 @@ export function ConsultationForm() {
         </fieldset>
       </div>
 
-      <button
+      <MagneticButton
         type="submit"
         disabled={isSubmitting}
         className="bg-gold text-accent-foreground mt-8 w-full rounded-sm px-6 py-4 text-sm font-semibold tracking-wide transition-opacity hover:opacity-90 disabled:opacity-60 sm:w-auto sm:px-10"
       >
         Request a Consultation
-      </button>
+      </MagneticButton>
       <p className="text-muted-foreground mt-4 text-xs">
         Your details are used only to contact you about this enquiry.
       </p>

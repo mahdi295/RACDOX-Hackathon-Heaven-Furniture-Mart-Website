@@ -1,9 +1,9 @@
 import { s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { s as Quote } from "../_libs/lucide-react.mjs";
-import { _ as whyChooseUs, c as company, f as mdQuote, i as aboutBrand, m as scaleAndTrust, r as SiteLayout, t as PageHero, u as img } from "./SiteLayout-91KFfyvO.mjs";
-import { t as Reveal } from "./Reveal-CkjjARpL.mjs";
+import { a as aboutBrand, d as img, h as scaleAndTrust, i as SiteLayout, l as company, n as PageHero, p as mdQuote, y as whyChooseUs } from "./SiteLayout-M5p3PCDm.mjs";
+import { t as Reveal } from "./Reveal-Bjnxl8w6.mjs";
 import { a as milestones, i as eventPhotos } from "./collections-N2yjn05X.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-D2LKpQMN.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-DvqiH31D.js
 var import_jsx_runtime = require_jsx_runtime();
 function Milestones() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
