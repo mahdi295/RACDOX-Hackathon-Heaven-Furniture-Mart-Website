@@ -1,14 +1,14 @@
 import { n as __toESM } from "../_runtime.mjs";
-import { o as motion, s as AnimatePresence, t as useAnimationControls } from "../_libs/framer-motion+[...].mjs";
+import { i as useMotionValue, n as useSpring, o as motion, s as AnimatePresence, t as useAnimationControls } from "../_libs/framer-motion+[...].mjs";
 import { r as require_react } from "../_libs/@hookform/resolvers+[...].mjs";
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Trigger2, i as Root2, n as Header, r as Item, s as require_jsx_runtime, t as Content2 } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { A as Building2, C as Clock, D as ChevronDown, M as ArrowUpRight, N as ArrowRight, O as Check, S as CreditCard, b as Gem, c as Play, d as PenTool, g as LayoutGrid, i as Star, j as Award, k as CalendarCheck, l as Phone, m as MapPin, r as Truck } from "../_libs/lucide-react.mjs";
-import { c as cn, d as img, g as services, i as SiteLayout, l as company, m as ourServices, r as Parallax, s as closing, t as MagneticLink, u as faqs, y as whyChooseUs } from "./SiteLayout-M5p3PCDm.mjs";
-import { t as Reveal } from "./Reveal-Bjnxl8w6.mjs";
+import { _ as whyChooseUs, c as company, h as services, l as faqs, n as Parallax, o as closing, p as ourServices, r as SiteLayout, s as cn, u as img } from "./SiteLayout-91KFfyvO.mjs";
+import { t as Reveal } from "./Reveal-CkjjARpL.mjs";
 import { r as collections, t as bespokeProcess } from "./collections-N2yjn05X.mjs";
 import { t as description } from "./routes-CwhIexcn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DWoCre1I.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-NgTIuSFe.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var slides = [
@@ -306,9 +306,9 @@ function Collections() {
 								className: "text-ivory/70 mt-2 max-w-lg text-sm leading-relaxed",
 								children: "Every project begins with a free design consultation and a set of measurements — then we design around them."
 							})
-						] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MagneticLink, {
+						] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 							to: "/bespoke",
-							className: "bg-gold text-accent-foreground inline-flex w-fit shrink-0 rounded-sm px-6 py-3 text-sm font-semibold",
+							className: "bg-gold text-accent-foreground inline-flex w-fit shrink-0 rounded-sm px-6 py-3 text-sm font-semibold transition-opacity hover:opacity-90",
 							children: "See the process"
 						})]
 					})
@@ -1083,6 +1083,71 @@ function PointerGradient({ className }) {
 		ref: canvasRef,
 		"aria-hidden": "true",
 		className: cn("pointer-events-none absolute inset-0 size-full", className)
+	});
+}
+/**
+* Pointer-follow spring physics shared by MagneticLink and MagneticButton.
+* Element pulls slightly toward the cursor on hover, springs back on leave.
+* Works on any element ref (anchor, button) — extracted so the effect isn't
+* locked to <Link>.
+*/
+function useMagnetic() {
+	const ref = (0, import_react.useRef)(null);
+	const x = useMotionValue(0);
+	const y = useMotionValue(0);
+	const springX = useSpring(x, {
+		stiffness: 200,
+		damping: 18,
+		mass: .4
+	});
+	const springY = useSpring(y, {
+		stiffness: 200,
+		damping: 18,
+		mass: .4
+	});
+	const onMouseMove = (e) => {
+		const el = ref.current;
+		if (!el) return;
+		const rect = el.getBoundingClientRect();
+		const relX = e.clientX - rect.left - rect.width / 2;
+		const relY = e.clientY - rect.top - rect.height / 2;
+		x.set(relX * .28);
+		y.set(relY * .35);
+	};
+	const onMouseLeave = () => {
+		x.set(0);
+		y.set(0);
+	};
+	return {
+		ref,
+		springX,
+		springY,
+		onMouseMove,
+		onMouseLeave
+	};
+}
+/**
+* A Link that pulls itself slightly toward the pointer on hover, then springs
+* back on leave — the "magnetic button" micro-interaction common on premium
+* furniture/agency sites (Minotti, Poliform). Falls back to a plain static
+* link for touch/reduced-motion, since the effect only makes sense with a mouse.
+*/
+function MagneticLink({ children, className, ...props }) {
+	const { ref, springX, springY, onMouseMove, onMouseLeave } = useMagnetic();
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
+		style: {
+			x: springX,
+			y: springY,
+			display: "inline-block"
+		},
+		onMouseMove,
+		onMouseLeave,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+			ref,
+			className,
+			...props,
+			children
+		})
 	});
 }
 function ClosingCta() {

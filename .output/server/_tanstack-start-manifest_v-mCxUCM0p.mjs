@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-CM5Z7dND.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-mCxUCM0p.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/__root.tsx",
@@ -10,21 +10,21 @@ var tsrStartManifest = () => ({ routes: {
 			"/contact",
 			"/showroom"
 		],
-		preloads: ["/assets/index-D573hSZt.js"],
+		preloads: ["/assets/index-BoDjFxiT.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-D573hSZt.js"
+			src: "/assets/index-BoDjFxiT.js"
 		} }]
 	},
 	"/": {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-BK5kiELE.js",
-			"/assets/SiteLayout-zhxbF-tt.js",
-			"/assets/truck-C6FgOc7r.js",
-			"/assets/Reveal-Cvxj92ws.js",
+			"/assets/routes-j1uRESjW.js",
+			"/assets/SiteLayout-D_GlD24D.js",
+			"/assets/truck-BzXUlDac.js",
+			"/assets/Reveal-A-BNtUls.js",
 			"/assets/collections-ByoC5Yj8.js"
 		]
 	},
@@ -32,9 +32,9 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-D26TWWMX.js",
-			"/assets/SiteLayout-zhxbF-tt.js",
-			"/assets/Reveal-Cvxj92ws.js",
+			"/assets/about-DW1RbATE.js",
+			"/assets/SiteLayout-D_GlD24D.js",
+			"/assets/Reveal-A-BNtUls.js",
 			"/assets/collections-ByoC5Yj8.js"
 		]
 	},
@@ -42,11 +42,11 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/bespoke.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/bespoke-Dq0Dyn6q.js",
-			"/assets/SiteLayout-zhxbF-tt.js",
-			"/assets/message-circle-HvLtglbb.js",
-			"/assets/truck-C6FgOc7r.js",
-			"/assets/Reveal-Cvxj92ws.js",
+			"/assets/bespoke-Dlnp500E.js",
+			"/assets/SiteLayout-D_GlD24D.js",
+			"/assets/truck-BzXUlDac.js",
+			"/assets/message-circle-c9ASYAvy.js",
+			"/assets/Reveal-A-BNtUls.js",
 			"/assets/collections-ByoC5Yj8.js"
 		]
 	},
@@ -54,8 +54,8 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/collections.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/collections-CqL53DLW.js",
-			"/assets/SiteLayout-zhxbF-tt.js",
+			"/assets/collections-BJgJ0ShF.js",
+			"/assets/SiteLayout-D_GlD24D.js",
 			"/assets/collections-ByoC5Yj8.js"
 		]
 	},
@@ -63,19 +63,19 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/contact.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/contact-dtN-NhEG.js",
-			"/assets/SiteLayout-zhxbF-tt.js",
-			"/assets/message-circle-HvLtglbb.js",
-			"/assets/Reveal-Cvxj92ws.js"
+			"/assets/contact-W2PegQKq.js",
+			"/assets/SiteLayout-D_GlD24D.js",
+			"/assets/message-circle-c9ASYAvy.js",
+			"/assets/Reveal-A-BNtUls.js"
 		]
 	},
 	"/showroom": {
 		filePath: "E:/heaven-furniture-mart-rebuilt/heaven-furniture-mart-website-full/src/routes/showroom.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/showroom-COnjKdE0.js",
-			"/assets/SiteLayout-zhxbF-tt.js",
-			"/assets/Reveal-Cvxj92ws.js",
+			"/assets/showroom-BEevf1Xm.js",
+			"/assets/SiteLayout-D_GlD24D.js",
+			"/assets/Reveal-A-BNtUls.js",
 			"/assets/collections-ByoC5Yj8.js"
 		]
 	}

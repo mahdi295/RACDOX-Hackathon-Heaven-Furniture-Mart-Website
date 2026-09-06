@@ -4,9 +4,9 @@ import { r as require_react } from "../_libs/@hookform/resolvers+[...].mjs";
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { E as ChevronLeft, T as ChevronRight, a as Search, n as X, v as Images } from "../_libs/lucide-react.mjs";
-import { _ as unlockBodyScroll, d as img, f as lockBodyScroll, i as SiteLayout, n as PageHero, o as catalogueImages } from "./SiteLayout-M5p3PCDm.mjs";
+import { a as catalogueImages, d as lockBodyScroll, g as unlockBodyScroll, r as SiteLayout, t as PageHero, u as img } from "./SiteLayout-91KFfyvO.mjs";
 import { r as collections } from "./collections-N2yjn05X.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/collections-ISw6nE8Q.js
+//#region node_modules/.nitro/vite/services/ssr/assets/collections-DgnHhtW7.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Lightbox({ isOpen, items, startIndex = 0, onClose }) {

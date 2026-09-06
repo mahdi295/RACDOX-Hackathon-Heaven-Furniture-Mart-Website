@@ -11,7 +11,7 @@ The current build is set up for Cloudflare Workers using TanStack Start + Nitro.
 - The consultation journey is converted into a WhatsApp conversation rather than a server-captured form submission.
 - It is fast, low-maintenance, and suitable for a luxury local business website.
 
-## Local build
+## Local build/
 ```bash
 npm install
 npm run build

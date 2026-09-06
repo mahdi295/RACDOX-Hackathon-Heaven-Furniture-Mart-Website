@@ -1,12 +1,11 @@
 import { n as __toESM } from "../_runtime.mjs";
-import { o as motion } from "../_libs/framer-motion+[...].mjs";
 import { n as useForm, r as require_react, t as u } from "../_libs/@hookform/resolvers+[...].mjs";
 import { s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { _ as Instagram, f as MessageCircle, h as Mail, l as Phone, m as MapPin, t as Youtube, w as CircleCheck, x as Facebook } from "../_libs/lucide-react.mjs";
-import { d as img, i as SiteLayout, l as company, m as ourServices, n as PageHero, v as useMagnetic } from "./SiteLayout-M5p3PCDm.mjs";
-import { t as Reveal } from "./Reveal-Bjnxl8w6.mjs";
+import { c as company, p as ourServices, r as SiteLayout, t as PageHero, u as img } from "./SiteLayout-91KFfyvO.mjs";
+import { t as Reveal } from "./Reveal-CkjjARpL.mjs";
 import { n as objectType, r as stringType, t as enumType } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/contact-ChDQnVtv.js
+//#region node_modules/.nitro/vite/services/ssr/assets/contact-C8ED6-yt.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function whatsappLink(payload = {}) {
@@ -16,29 +15,6 @@ function whatsappLink(payload = {}) {
 	if (payload.method) lines.push(`Preferred contact: ${payload.method}`);
 	if (payload.message) lines.push(`Details: ${payload.message}`);
 	return `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
-}
-/**
-* Same magnetic pull as MagneticLink, for plain <button> elements that aren't
-* router links (form submits, in-page actions).
-*/
-function MagneticButton({ children, className, ...props }) {
-	const { ref, springX, springY, onMouseMove, onMouseLeave } = useMagnetic();
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
-		style: {
-			x: springX,
-			y: springY,
-			display: "block"
-		},
-		className: className?.match(/\bw-full\b/) ? className : "inline-block",
-		onMouseMove,
-		onMouseLeave,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-			ref,
-			className,
-			...props,
-			children
-		})
-	});
 }
 var projectTypes = [
 	"New",
@@ -244,7 +220,7 @@ function ConsultationForm() {
 					})
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MagneticButton, {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				type: "submit",
 				disabled: isSubmitting,
 				className: "bg-gold text-accent-foreground mt-8 w-full rounded-sm px-6 py-4 text-sm font-semibold tracking-wide transition-opacity hover:opacity-90 disabled:opacity-60 sm:w-auto sm:px-10",
